@@ -1,6 +1,33 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<%= form_tag("/sms/send", method: "post") do %>
-<!-- add form elements here -->
-<% end %>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SMS app</title>
+    </head>
+    
+<body>
+    <div id="wrapper">
+        <div class="welcome">
+            <h1>Welcome!</h1> 
+            <p>This is an app for sending SMS with our handy online form.</p>
+        </div> <!-- end .welcome -->
+        <hr>
+        <div id="form">
+            <form action="xxx" method="post">
+                <div class="form-input">
+                    <label for="phone-number">Enter the phone number here:</label>
+                    <input type="tel" id="phone-number" name="phonenumber"/>
+                </div> <!-- end phone submit -->
+                <div class="form-input">
+                    <label for="text-input">Enter your text here:</label>
+                    <textarea id="text-input" name="textinput" class="text-input"></textarea>
+                    <div class="form-button">
+                        <button type="submit">Submit text</button>
+                    </div>
+                </div> <!-- end text submit -->
+            </form>
+        </div> <!-- end #form -->
+    </div> <!-- end #wrapper -->
+</body>
+</html>
