@@ -8,12 +8,15 @@
     
 <body>
     <div id="wrapper">
-        <div class="welcome">
+        <div class="intro">
             <h1>Welcome!</h1> 
             <p>This is an app for sending SMS with our handy online form.</p>
-        </div> <!-- end .welcome -->
+        </div> <!-- end .intro -->
         <hr>
-        <div id="form">
+        <div id="label">
+            <p>Please fill out this form below to send a text to your desired number</p>
+        </div> <!-- end #label -->
+        <div class="form">
             <form action="/sms/send" method="post">
                 <div class="form-input">
                     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"/>

@@ -70,11 +70,14 @@ table {
 /* ----- end CSS reset ----- */
 
 /* Colors:
-    background-color: #002d77
+    background-color: #002d77;
     #wrapper background-color: #ccdfff;
+    .form/.container background-color: #b7c8e5;
     text color: #00112d;
-    heading color: #002d77
+    heading color: #002d77;
 */
+
+/* NOTE: home page styles displayed first, then sms page */
 
 body {
     font-family: sans-serif;
@@ -112,7 +115,7 @@ textarea {
 
 /* --- classes --- */
 
-.welcome {
+.intro {
     position: relative;
     margin: auto;
 }
@@ -126,13 +129,35 @@ textarea {
     border: 1px solid #002d77;
     border-radius: 5px;
     margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b7c8e5;
 }
 
 .form-input {
     margin-top: 5px;
     vertical-align: top;
 }
+/*----------------------*/
+.container {
+    width: 700px;
+    border: 1px solid #002d77;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b7c8e5;
+}
 
+.parameters p {
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
+.home-link {
+    margin-left: auto;
+    margin-right: auto;
+}
 /* --- ids --- */
 
 #wrapper {

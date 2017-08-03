@@ -1,2 +1,35 @@
-<h1>Pages#sms</h1>
-<p>Find me in app/views/pages/sms.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SMS app - submission success</title>
+    </head>
+    
+<body>
+    <div id="wrapper">
+        <div class="intro">
+            <h1>Success!</h1>
+            <p>Your form has successfully been submitted and your text sent.</p>
+        </div> <!-- end .intro -->
+        <hr>
+        <div id="label">
+            <p>The number your text was sent to, and the contents of the text:</p>
+        </div> <!-- end #label -->
+        <div class="container">
+            <div class='parameters'>
+                <p>phone number:</p>
+                <%= params[:phonenumber] %>
+            </div> <!-- end .parameters for phone -->
+            <div class='parameters'>
+                <p>text:</p>
+                <%= params[:textinput] %>
+            </div> <!-- end .parameters for text -->
+        </div> <!-- .container -->
+        <div class="home-link">
+            <%= link_to "Send another text", root_path %>
+        </div> <!-- end .home-link -->
+    </div> <!-- end .wrapper -->
+</body>
+
+</html>
