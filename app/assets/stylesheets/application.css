@@ -70,9 +70,9 @@ table {
 /* ----- end CSS reset ----- */
 
 /* Colors:
-    background-color: #002d77;
-    #wrapper background-color: #ccdfff;
-    .form/.container background-color: #b7c8e5;
+    background-color/.home-link:hover: #002d77;
+    #wrapper/.home-link:hover background-color/color: #ccdfff;
+    .form/.container/.home-link background-color: #b7c8e5;
     text color: #00112d;
     heading color: #002d77;
 */
@@ -158,6 +158,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
 }
+
 /* --- ids --- */
 
 #wrapper {
