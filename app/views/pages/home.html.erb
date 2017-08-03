@@ -14,8 +14,9 @@
         </div> <!-- end .welcome -->
         <hr>
         <div id="form">
-            <form action="xxx" method="post">
+            <form action="/sms/send" method="post">
                 <div class="form-input">
+                    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"/>
                     <label for="phone-number">Enter the phone number here:</label>
                     <input type="tel" id="phone-number" name="phonenumber"/>
                 </div> <!-- end phone submit -->
